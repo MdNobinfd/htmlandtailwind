@@ -1,0 +1,613 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tailwind css</title>
+    <!-- Font-awesome cdn -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+      integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <!-- Font-awesome cdn -->
+     <!-- jQuery -->
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+   <!-- jQuery -->
+    <link rel="stylesheet" href="output.css" />
+  </head>
+  <body>
+    <!-- Navber start -->
+    <nav class="bg-[#444242CC] lg:mt-[29px] lg:absolute relative w-full lg:px-0 px-[20px]">
+      <!-- small device -->
+      <div class=" flex justify-between items-center lg:hidden ">
+            <div class="">
+                <img class="w-[80px]" src="./images/logo.png" alt="logo">
+            </div>
+            <div class="">
+              <i class="fas fa-bars cursor-pointer" id="mobile-nav-icon"></i>
+            </div>
+
+            <div class="absolute w-full left-0 top-[44px] hidden" id="mobile-menu">
+              <ul class=" bg-[#444242CC] p-4 text-white text-center">
+                  <li><a href="#" class="hover:text-gray-400">Home</a></li>
+                  <li><a href="#about" class="hover:text-gray-400">About</a></li>
+                  <li><a href="#what" class="hover:text-gray-400">What I Do</a></li>
+                  <li><a href="#portfolio" class="hover:text-gray-400">Portfolio</a></li>
+                  <li><a href="#" class="hover:text-gray-400">Client Speak</a></li>
+                  <li><a href="#contact" class="hover:text-gray-400">Contact Me</a></li>
+              </ul>
+          </div>
+         </div>
+      
+        <!-- Large device -->
+      <div class="lg:block hidden lg:px-[25px]">
+        <div
+          class="container mx-auto relative flex items-center justify-between"
+        >
+          <div class="">
+            <img
+              class="absolute top-[-10px]"
+              src="images/logo.png"
+              alt="logo "
+            />
+          </div>
+          <div class="">
+            <ul class="flex items-center ">
+              <li
+                class="font-Oswald font-bold text-xl leading-[29px] text-white hover:text-[#525252] hover:bg-white border-b-[3px] border-transparent hover:border-b-[3px] hover:border-b-[#F5DF4E] py-3 hover:pb-[-3px] px-[10px]"
+              >
+                <a href="#">Home</a>
+              </li>
+              <li
+                class="font-Oswald font-bold text-xl leading-[29px] text-white hover:text-[#525252] hover:bg-white border-b-[3px] border-transparent hover:border-b-[3px] hover:border-b-[#F5DF4E] py-3 hover:pb-[-3px] px-[10px]"
+              >
+                <a href="#about">About Me</a>
+              </li>
+              <li
+                class="font-Oswald font-bold text-xl leading-[29px] text-white hover:text-[#525252] hover:bg-white border-b-[3px] border-transparent hover:border-b-[3px] hover:border-b-[#F5DF4E] py-3 hover:pb-[-3px] px-[10px]"
+              >
+                <a href="#what">What I Do</a>
+              </li>
+              <li
+                class="font-Oswald font-bold text-xl leading-[29px] text-white hover:text-[#525252] hover:bg-white border-b-[3px] border-transparent hover:border-b-[3px] hover:border-b-[#F5DF4E] py-3 hover:pb-[-3px] px-[10px]"
+              >
+                <a href="#portfolio">Portfolio</a>
+              </li>
+              <li
+                class="font-Oswald font-bold text-xl leading-[29px] text-white hover:text-[#525252] hover:bg-white border-b-[3px] border-transparent hover:border-b-[3px] hover:border-b-[#F5DF4E] py-3 hover:pb-[-3px] px-[10px]"
+              >
+                <a href="#">Client Speak</a>
+              </li>
+              <li
+                class="font-Oswald font-bold text-xl leading-[29px] text-white hover:text-[#525252] hover:bg-white border-b-[3px] border-transparent hover:border-b-[3px] hover:border-b-[#F5DF4E] py-3 hover:pb-[-3px] px-[10px]"
+              >
+                <a href="#contact">Contact Me</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </nav>
+    <!-- Navber end -->
+    <!-- Hero section start -->
+    <section id="hero">
+      <div
+        class="bg-[url(images/herobg.png)] bg-no-repeat bg-cover bg-center lg:pt-[256px] pt-[30px]"
+      >
+        <div class="text-center">
+          <h2
+            class="font-Poppins font-bold md:text-[35px] text-[20px] md:leading-[52px] text-white"
+          >
+            HI, I'M A FREELANCER
+          </h2>
+          <h1
+            class="font-Poppins font-bold md:text-[110px] text-[52px] md:leading-[165px] text-white"
+          >
+            DESIGNER I
+          </h1>
+          <h4
+            class="font-Poppins md:font-bold md:text-[23xp] text-[16px] text-white leading-[34px] md:pb-[18px]"
+          >
+            based in Uttara Dhaka, BANGLADESH.
+          </h4>
+          <button
+            class="font-Poppins font-medium md:text-xl text-base leading-[30px] py-[10px] px-7 bg-[#F7DE4D]"
+          >
+            View My Works
+          </button>
+          <div class="lg:pt-[86px] md:pt-[40px] pt-3 md:pb-[34px] pb-5">
+            <i class="fa-solid fa-arrow-down text-[32px] text-white"></i>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Hero section end -->
+    <!-- About Me Section start  -->
+    <section id="about" class="md:pt-[69px] pt-[30px] md:pb-[123px] pb-[30px] lg:px-[25px] px-[15px]">
+      <div class="container mx-auto">
+        <div class="text-center">
+          <h4 class="header_title">About Me</h4>
+          <h3 class="header_para">Know Me More</h3>
+        </div>
+        <div class="lg:flex justify-between md:pt-[80px] pt-[20px] md:pb-[51px] pb-[20px]">
+          <div class="lg:w-[60%] w-full">
+            <h2
+              class="font-Sen font-normal md:text-[38px] text-[24px] text-center md:text-left text-black md:leading-[38px]"
+            >
+              Hi, I'm<span
+                class="font-medium border-b-[#F7DE4D] border-b-[2px]pb-2"
+                >Roman Islam Joy</span
+              >
+            </h2>
+            <p class="md:mt-10 mt-2">
+              I'm a designer & developer with a passion for web design. I enjoy
+              developing simple, clean and slick websites that provide real
+              value to the end user. Thousands of clients have procured
+              exceptional results while working with me. Delivering work within
+              time and budget which meets client’s requirements is our moto.
+            </p>
+          </div>
+          <div class="relative">
+            <div class="ml-[100px]">
+              <img
+                class="absolute z-20 w-[149px] lg:right-[90px] right-[96px]"
+                src="images/expriance.png"
+                alt="expriance"
+              />
+              <img
+                class="absolute right-[116px] z-10 w-[110px]"
+                src="images/expriance2.png"
+                alt="expriance2"
+              />
+            </div>
+            <h3
+              class="lg:pt-[110px] sm:pt-[110px] pt-[110px] md:pt-0  font-Poppins font-bold md:text-[42px] text-[32px] md:leading-[57px]"
+            >
+              <span class="font-normal text-[23px] leading-[32px]"
+                >Years of</span
+              >
+              Experiance
+            </h3>
+          </div>
+        </div>
+        <div class="grid lg:grid-cols-4 md:grid-cols-2 gap-y-5">
+          <div class="">
+            <h4
+              class="font-Sen font-normal text-[19px] text-black leading-[22px]"
+            >
+              Name
+            </h4>
+            <h4
+              class="font-Sen font-bold text-[19px] text-black leading-[22px]"
+            >
+              Roman Islam Joy
+            </h4>
+          </div>
+          <div class="">
+            <h4
+              class="font-Sen font-normal text-[19px] text-black leading-[22px]"
+            >
+              Email:
+            </h4>
+            <h4
+              class="font-Sen font-bold text-[19px] text-black leading-[22px]"
+            >
+              romanislam@gmail.com
+            </h4>
+          </div>
+          <div class="">
+            <h4
+              class="font-Sen font-normal text-[19px] text-black leading-[22px]"
+            >
+              Date of birth:
+            </h4>
+            <h4
+              class="font-Sen font-bold text-[19px] text-black leading-[22px]"
+            >
+              12 January, 2004
+            </h4>
+          </div>
+          <div class="">
+            <h4
+              class="font-Sen font-normal text-[19px] text-black leading-[22px]"
+            >
+              From:
+            </h4>
+            <h4
+              class="font-Sen font-bold text-[19px] text-black leading-[22px]"
+            >
+              Dhaka, Bangladesh
+            </h4>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- About Me Section end  -->
+    <!-- What I Do section start -->
+    <section id="what" class="bg-[#EFEFEF] lg:px-[25px] px-[15px]">
+      <div class="container mx-auto md:pt-[69px] pt-[30px] md:pb-[113px] pb-[30px]">
+        <div class="text-center">
+          <h4 class="header_title">What I Do</h4>
+          <h3 class="header_para">How I can help your next project</h3>
+        </div>
+        <div class="grid lg:grid-cols-3  sm:grid-cols-2 sm:gap-x-4 md:grid-cols-2 md:pt-[51px] pt-[30px] lg:gap-x-[38px] lg:gap-y-[47px] gap-y-4">
+            <div class="text-center">
+                <img class="mx-auto" src="./images/graphic.png" alt="">
+                <h3 class="font-Oswald font-bold text-[29px] text-[#464646] leading-[42px] pb-[11px]">Graphic Design</h3>
+                <p class="font-Poppins font-normal text-[18px] text-[#000000A6] md:text-left leading-[23px]">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry’s standard dummy text.</p>
+            </div>
+            <div class="text-center">
+                <img class="mx-auto" src="./images/web.png" alt="">
+                <h3 class="font-Oswald font-bold text-[29px] text-[#464646] leading-[42px] pb-[11px]">Web Design</h3>
+                <p class="font-Poppins font-normal text-[18px] text-[#000000A6] md:text-left leading-[23px]">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry’s standard dummy text.</p>
+            </div>
+            <div class="text-center">
+                <img class="mx-auto" src="./images/uxui.png" alt="">
+                <h3 class="font-Oswald font-bold text-[29px] text-[#464646] leading-[42px] pb-[11px]">UI/UX Design</h3>
+                <p class="font-Poppins font-normal text-[18px] text-[#000000A6] md:text-left leading-[23px]">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry’s standard dummy text.</p>
+            </div>
+            <div class="text-center">
+                <img class="mx-auto" src="./images/app.png" alt="">
+                <h3 class="font-Oswald font-bold text-[29px] text-[#464646] leading-[42px] pb-[11px]">App Design & Develop</h3>
+                <p class="font-Poppins font-normal text-[18px] text-[#000000A6] md:text-left leading-[23px]">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry’s standard dummy text.</p>
+            </div>
+            <div class="text-center">
+                <img class="mx-auto" src="./images/business.png" alt="">
+                <h3 class="font-Oswald font-bold text-[29px] text-[#464646] leading-[42px] pb-[11px]">Business Analysis</h3>
+                <p class="font-Poppins font-normal text-[18px] text-[#000000A6] md:text-left leading-[23px]">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry’s standard dummy text.</p>
+            </div>
+            <div class="text-center">
+                <img class="mx-auto" src="./images/seo.png" alt="">
+                <h3 class="font-Oswald font-bold text-[29px] text-[#464646] leading-[42px] pb-[11px]">SEO Marketing</h3>
+                <p class="font-Poppins font-normal text-[18px] text-[#000000A6] md:text-left leading-[23px]">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry’s standard dummy text.</p>
+            </div>
+        </div>
+      </div>
+    </section>
+    <!-- What I Do section end -->
+    <!-- Protfolio section start -->
+    <section id="portfolio" class="pt-[69px] md:pb-[94px] pb-[30px] lg:px-[25px] px-[15px]">
+       <div class="container mx-auto">
+         <div class="text-center">
+         <h4 class="header_title">Portfolio</h4>
+         <h3 class="header_para">Some of my most recent projects</h3>
+       </div>
+       <!-- <div class="">
+        <ul class="flex items-center md:gap-x-[80px] justify-center  tabs">
+          <li data-tab="tap-1" class="current">All</li>
+          <li data-tab="tap-2">Details</li>
+          <li data-tab="tap-3">Mockups</li>
+          <li data-tab="tap-4">Youtube Videos</li>
+          <li data-tab="tap-5">Vimeo Videos</li>
+        </ul>
+        <div id="tab-1" class="tab-contant display-none current">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Vero, quo.</div>
+        <div id="tab-2" class="tab-contant display-none ">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quis eos dicta necessitatibus fugiat in vero autem consequatur obcaecati sit voluptate.</div>
+        <div id="tab-3" class="tab-contant display-none ">Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium omnis dolore, non nobis saepe fuga magni aspernatur quas vel! Tenetur unde vitae exercitationem provident reiciendis sint delectus animi ab fugit.</div>
+        <div id="tab-4" class="tab-contant display-none ">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Architecto laborum at distinctio suscipit perspiciatis consequatur?</div>
+        <div id="tab-5" class="tab-contant display-none ">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid ut, numquam culpa tenetur doloremque temporibus nobis incidunt quis maiores blanditiis minus, fugiat aut nihil debitis ipsa sapiente asperiores deleniti explicabo repudiandae sequi laudantium facilis! Inventore adipisci rerum repellat fugit sapiente?</div>
+       </div> -->
+       
+       <div class="">
+        <ul class="grid md:grid-cols-5 sm:grid-cols-3 gap-y-1 text-center items-center lg:gap-x-[80px] cursor-pointer justify-center tabs mb-[30px]">
+            <li data-tab="tab-1" class="current">All</li>
+            <li data-tab="tab-2">Details</li>
+            <li data-tab="tab-3">Mockups</li>
+            <li data-tab="tab-4">Youtube Videos</li>
+            <li data-tab="tab-5">Vimeo Videos</li>
+        </ul>
+        
+        <div id="tab-1" class="tab-content current">
+          <div class="grid lg:grid-cols-3 sm:grid-cols-2 lg:gap-x-[60px] md:gap-x-[40px] sm:gap-x-4 gap-y-[20px] md:gap-y-[50px]">
+            <div class="relative group duration-300">
+              <img class="w-full" src="images/protfolio1.png" alt="protfolio1">
+              <div class="absolute bottom-0 left-0 w-full h-0 group-hover:h-full duration-500 ease-in-out overflow-hidden text-center bg-[#0000008C] flex flex-col justify-center">
+                <img class="mx-auto" src="images/protfoliohover.png" alt="protfoliohover">
+                <h3 class="font-Oswald font-normal text-[19px] text-white leading-[22px] pt-[14px]">Detailed Project 1</h3>
+                <h3 class="font-Oswald font-medium text-[19px] text-white leading-[28px]">Category</h3>
+              </div>
+            </div>
+            <div class="relative group duration-300">
+              <img class="w-full" src="images/protfolio2.png" alt="protfolio2">
+              <div class="absolute bottom-0 left-0 w-full h-0 group-hover:h-full duration-500 ease-in-out overflow-hidden text-center bg-[#0000008C] flex flex-col justify-center">
+                <img class="mx-auto" src="images/protfoliohover.png" alt="protfoliohover">
+                <h3 class="font-Oswald font-normal text-[19px] text-white leading-[22px] pt-[14px]">Detailed Project 1</h3>
+                <h3 class="font-Oswald font-medium text-[19px] text-white leading-[28px]">Category</h3>
+              </div>
+            </div>
+            <div class="relative group duration-300">
+              <img class="w-full" src="images/protfolio3.png" alt="protfolio3">
+              <div class="absolute bottom-0 left-0 w-full h-0 group-hover:h-full duration-500 ease-in-out overflow-hidden text-center bg-[#0000008C] flex flex-col justify-center">
+                <img class="mx-auto" src="images/protfoliohover.png" alt="protfoliohover">
+                <h3 class="font-Oswald font-normal text-[19px] text-white leading-[22px] pt-[14px]">Detailed Project 1</h3>
+                <h3 class="font-Oswald font-medium text-[19px] text-white leading-[28px]">Category</h3>
+              </div>
+            </div>
+            <div class="relative group duration-300">
+              <img class="w-full" src="images/protfolio4.png" alt="protfolio4">
+              <div class="absolute bottom-0 left-0 w-full h-0 group-hover:h-full duration-500 ease-in-out overflow-hidden text-center bg-[#0000008C] flex flex-col justify-center">
+                <img class="mx-auto" src="images/protfoliohover.png" alt="protfoliohover">
+                <h3 class="font-Oswald font-normal text-[19px] text-white leading-[22px] pt-[14px]">Detailed Project 1</h3>
+                <h3 class="font-Oswald font-medium text-[19px] text-white leading-[28px]">Category</h3>
+              </div>
+            </div>
+            <div class="relative group duration-300">
+              <img class="w-full" src="images/protfolio5.png" alt="protfolio5">
+              <div class="absolute bottom-0 left-0 w-full h-0 group-hover:h-full duration-500 ease-in-out overflow-hidden text-center bg-[#0000008C] flex flex-col justify-center">
+                <img class="mx-auto" src="images/protfoliohover.png" alt="protfoliohover">
+                <h3 class="font-Oswald font-normal text-[19px] text-white leading-[22px] pt-[14px]">Detailed Project 1</h3>
+                <h3 class="font-Oswald font-medium text-[19px] text-white leading-[28px]">Category</h3>
+              </div>
+            </div>
+            <div class="relative group duration-300">
+              <img class="w-full" src="images/protfolio6.png" alt="protfolio6">
+              <div class="absolute bottom-0 left-0 w-full h-0 group-hover:h-full duration-500 ease-in-out overflow-hidden text-center bg-[#0000008C] flex flex-col justify-center">
+                <img class="mx-auto" src="images/protfoliohover.png" alt="protfoliohover">
+                <h3 class="font-Oswald font-normal text-[19px] text-white leading-[22px] pt-[14px]">Detailed Project 1</h3>
+                <h3 class="font-Oswald font-medium text-[19px] text-white leading-[28px]">Category</h3>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div id="tab-2" class="tab-content">
+          <div class="grid lg:grid-cols-3 sm:grid-cols-2 lg:gap-x-[60px] md:gap-x-[40px] sm:gap-x-4 gap-y-[20px] md:gap-y-[50px]">
+            <div class="relative group duration-300">
+              <img class="w-full" src="images/protfolio5.png" alt="protfolio1">
+              <div class="absolute bottom-0 left-0 w-full h-0 group-hover:h-full duration-500 ease-in-out overflow-hidden text-center bg-[#0000008C] flex flex-col justify-center">
+                <img class="mx-auto" src="images/protfoliohover.png" alt="protfoliohover">
+                <h3 class="font-Oswald font-normal text-[19px] text-white leading-[22px] pt-[14px]">Detailed Project 1</h3>
+                <h3 class="font-Oswald font-medium text-[19px] text-white leading-[28px]">Category</h3>
+              </div>
+            </div>
+            <div class="relative group duration-300">
+              <img class="w-full" src="images/protfolio3.png" alt="protfolio2">
+              <div class="absolute bottom-0 left-0 w-full h-0 group-hover:h-full duration-500 ease-in-out overflow-hidden text-center bg-[#0000008C] flex flex-col justify-center">
+                <img class="mx-auto" src="images/protfoliohover.png" alt="protfoliohover">
+                <h3 class="font-Oswald font-normal text-[19px] text-white leading-[22px] pt-[14px]">Detailed Project 1</h3>
+                <h3 class="font-Oswald font-medium text-[19px] text-white leading-[28px]">Category</h3>
+              </div>
+            </div>
+            <div class="relative group duration-300">
+              <img class="w-full" src="images/protfolio1.png" alt="protfolio3">
+              <div class="absolute bottom-0 left-0 w-full h-0 group-hover:h-full duration-500 ease-in-out overflow-hidden text-center bg-[#0000008C] flex flex-col justify-center">
+                <img class="mx-auto" src="images/protfoliohover.png" alt="protfoliohover">
+                <h3 class="font-Oswald font-normal text-[19px] text-white leading-[22px] pt-[14px]">Detailed Project 1</h3>
+                <h3 class="font-Oswald font-medium text-[19px] text-white leading-[28px]">Category</h3>
+              </div>
+            </div>
+            <div class="relative group duration-300">
+              <img class="w-full" src="images/protfolio5.png" alt="protfolio5">
+              <div class="absolute bottom-0 left-0 w-full h-0 group-hover:h-full duration-500 ease-in-out overflow-hidden text-center bg-[#0000008C] flex flex-col justify-center">
+                <img class="mx-auto" src="images/protfoliohover.png" alt="protfoliohover">
+                <h3 class="font-Oswald font-normal text-[19px] text-white leading-[22px] pt-[14px]">Detailed Project 1</h3>
+                <h3 class="font-Oswald font-medium text-[19px] text-white leading-[28px]">Category</h3>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div id="tab-3" class="tab-content">
+          <div class="grid lg:grid-cols-3 sm:grid-cols-2 lg:gap-x-[60px] md:gap-x-[40px] sm:gap-x-4 gap-y-[20px] md:gap-y-[50px]">
+            <div class="relative group duration-300">
+              <img class="w-full" src="images/protfolio3.png" alt="protfolio1">
+              <div class="absolute bottom-0 left-0 w-full h-0 group-hover:h-full duration-500 ease-in-out overflow-hidden text-center bg-[#0000008C] flex flex-col justify-center">
+                <img class="mx-auto" src="images/protfoliohover.png" alt="protfoliohover">
+                <h3 class="font-Oswald font-normal text-[19px] text-white leading-[22px] pt-[14px]">Detailed Project 1</h3>
+                <h3 class="font-Oswald font-medium text-[19px] text-white leading-[28px]">Category</h3>
+              </div>
+            </div>
+            <div class="relative group duration-300">
+              <img class="w-full" src="images/protfolio2.png" alt="protfolio2">
+              <div class="absolute bottom-0 left-0 w-full h-0 group-hover:h-full duration-500 ease-in-out overflow-hidden text-center bg-[#0000008C] flex flex-col justify-center">
+                <img class="mx-auto" src="images/protfoliohover.png" alt="protfoliohover">
+                <h3 class="font-Oswald font-normal text-[19px] text-white leading-[22px] pt-[14px]">Detailed Project 1</h3>
+                <h3 class="font-Oswald font-medium text-[19px] text-white leading-[28px]">Category</h3>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div id="tab-4" class="tab-content">
+          <div class="grid lg:grid-cols-3 sm:grid-cols-2 lg:gap-x-[60px] md:gap-x-[40px] sm:gap-x-4 gap-y-[20px] md:gap-y-[50px]">
+            <div class="relative group duration-300">
+              <img class="w-full" src="images/protfolio1.png" alt="protfolio1">
+              <div class="absolute bottom-0 left-0 w-full h-0 group-hover:h-full duration-500 ease-in-out overflow-hidden text-center bg-[#0000008C] flex flex-col justify-center">
+                <img class="mx-auto" src="images/protfoliohover.png" alt="protfoliohover">
+                <h3 class="font-Oswald font-normal text-[19px] text-white leading-[22px] pt-[14px]">Detailed Project 1</h3>
+                <h3 class="font-Oswald font-medium text-[19px] text-white leading-[28px]">Category</h3>
+              </div>
+            </div>
+            <div class="relative group duration-300">
+              <img class="w-full" src="images/protfolio2.png" alt="protfolio2">
+              <div class="absolute bottom-0 left-0 w-full h-0 group-hover:h-full duration-500 ease-in-out overflow-hidden text-center bg-[#0000008C] flex flex-col justify-center">
+                <img class="mx-auto" src="images/protfoliohover.png" alt="protfoliohover">
+                <h3 class="font-Oswald font-normal text-[19px] text-white leading-[22px] pt-[14px]">Detailed Project 1</h3>
+                <h3 class="font-Oswald font-medium text-[19px] text-white leading-[28px]">Category</h3>
+              </div>
+            </div>
+            <div class="relative group duration-300">
+              <img class="w-full" src="images/protfolio3.png" alt="protfolio3">
+              <div class="absolute bottom-0 left-0 w-full h-0 group-hover:h-full duration-500 ease-in-out overflow-hidden text-center bg-[#0000008C] flex flex-col justify-center">
+                <img class="mx-auto" src="images/protfoliohover.png" alt="protfoliohover">
+                <h3 class="font-Oswald font-normal text-[19px] text-white leading-[22px] pt-[14px]">Detailed Project 1</h3>
+                <h3 class="font-Oswald font-medium text-[19px] text-white leading-[28px]">Category</h3>
+              </div>
+            </div>
+            <div class="relative group duration-300">
+              <img class="w-full" src="images/protfolio4.png" alt="protfolio4">
+              <div class="absolute bottom-0 left-0 w-full h-0 group-hover:h-full duration-500 ease-in-out overflow-hidden text-center bg-[#0000008C] flex flex-col justify-center">
+                <img class="mx-auto" src="images/protfoliohover.png" alt="protfoliohover">
+                <h3 class="font-Oswald font-normal text-[19px] text-white leading-[22px] pt-[14px]">Detailed Project 1</h3>
+                <h3 class="font-Oswald font-medium text-[19px] text-white leading-[28px]">Category</h3>
+              </div>
+            </div>
+            <div class="relative group duration-300">
+              <img class="w-full" src="images/protfolio5.png" alt="protfolio5">
+              <div class="absolute bottom-0 left-0 w-full h-0 group-hover:h-full duration-500 ease-in-out overflow-hidden text-center bg-[#0000008C] flex flex-col justify-center">
+                <img class="mx-auto" src="images/protfoliohover.png" alt="protfoliohover">
+                <h3 class="font-Oswald font-normal text-[19px] text-white leading-[22px] pt-[14px]">Detailed Project 1</h3>
+                <h3 class="font-Oswald font-medium text-[19px] text-white leading-[28px]">Category</h3>
+              </div>
+            </div>
+            <div class="relative group duration-300">
+              <img class="w-full" src="images/protfolio6.png" alt="protfolio6">
+              <div class="absolute bottom-0 left-0 w-full h-0 group-hover:h-full duration-500 ease-in-out overflow-hidden text-center bg-[#0000008C] flex flex-col justify-center">
+                <img class="mx-auto" src="images/protfoliohover.png" alt="protfoliohover">
+                <h3 class="font-Oswald font-normal text-[19px] text-white leading-[22px] pt-[14px]">Detailed Project 1</h3>
+                <h3 class="font-Oswald font-medium text-[19px] text-white leading-[28px]">Category</h3>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div id="tab-5" class="tab-content">
+          <div class="grid lg:grid-cols-3 sm:grid-cols-2 lg:gap-x-[60px] md:gap-x-[40px] sm:gap-x-4 gap-y-[20px] md:gap-y-[50px]">
+            <div class="relative group duration-300">
+              <img class="w-full" src="images/protfolio4.png" alt="protfolio1">
+              <div class="absolute bottom-0 left-0 w-full h-0 group-hover:h-full duration-500 ease-in-out overflow-hidden text-center bg-[#0000008C] flex flex-col justify-center">
+                <img class="mx-auto" src="images/protfoliohover.png" alt="protfoliohover">
+                <h3 class="font-Oswald font-normal text-[19px] text-white leading-[22px] pt-[14px]">Detailed Project 1</h3>
+                <h3 class="font-Oswald font-medium text-[19px] text-white leading-[28px]">Category</h3>
+              </div>
+            </div>
+            <div class="relative group duration-300">
+              <img class="w-full" src="images/protfolio5.png" alt="protfolio2">
+              <div class="absolute bottom-0 left-0 w-full h-0 group-hover:h-full duration-500 ease-in-out overflow-hidden text-center bg-[#0000008C] flex flex-col justify-center">
+                <img class="mx-auto" src="images/protfoliohover.png" alt="protfoliohover">
+                <h3 class="font-Oswald font-normal text-[19px] text-white leading-[22px] pt-[14px]">Detailed Project 1</h3>
+                <h3 class="font-Oswald font-medium text-[19px] text-white leading-[28px]">Category</h3>
+              </div>
+            </div>
+            <div class="relative group duration-300">
+              <img class="w-full" src="images/protfolio1.png" alt="protfolio3">
+              <div class="absolute bottom-0 left-0 w-full h-0 group-hover:h-full duration-500 ease-in-out overflow-hidden text-center bg-[#0000008C] flex flex-col justify-center">
+                <img class="mx-auto" src="images/protfoliohover.png" alt="protfoliohover">
+                <h3 class="font-Oswald font-normal text-[19px] text-white leading-[22px] pt-[14px]">Detailed Project 1</h3>
+                <h3 class="font-Oswald font-medium text-[19px] text-white leading-[28px]">Category</h3>
+              </div>
+            </div>
+          </div>
+        </div>
+    </div>
+      </div>
+    </section>
+    <!-- Protfolio section end -->
+    <!-- Hire me setion start -->
+     <section id="hireme">
+        <div class="bg-[url(images/introbg.png)] bg-no-repeat bg-cover bg-center bg-fixed md:pt-[178px] pb-[30px] md:pb-[109px]">
+            <div class="text-center">
+                <h3 class="font-Oswald font-normal text-[28px] md:text-[39px] text-white leading-[57px] pb-[21px]">Interested in working with me?</h3>
+                <button class="font-Oswald font-normal text-[16px] md:text-[29px] text-black leading-[42px] bg-[#F5DF4E] md:py-[19px] md:px-[59px] px-[20px] ">Hire Me!</button>
+            </div>
+        </div>
+     </section>
+    <!-- Hire me setion end -->
+     <!-- Faq section start  -->
+      <section id="faq" class="md:pt-[64px] pt-[30px] 
+      lg:pb-[139px]  pb-[30px] lg:px-[25px] px-[15px]">
+        <div class="container mx-auto">
+          <div class="md:pb-[40px] pb-[20px]">
+            <h4 class="header_title">FAQ</h4>
+            <h3 class="header_para">Have any questions?</h3>
+          </div>
+          <div class="grid md:grid-cols-2 gap-y-5">
+            <div class=" bg-[#D9D9D9] pt-[16px] pb-[64px] pl-[44px] pr-[61px]">
+              <div class="faq-item border-b-2 border-[#000000] pb-4">
+                <button class="faq-title w-full text-left text-xl font-semibold text-gray-800 py-3 flex gap-x-[13px]  items-center  focus:outline-none">
+                  <span class="arrow-icon transform rotate-0 transition-transform duration-200"><i class="fa-solid fa-chevron-down"></i></span>
+                    <span>Who is Roman?</span>
+                </button>
+                <div class="faq-content mt-2 text-gray-600 text-base hidden">
+                    <p>My name is Roman & I am a Freelancer.
+I live in Dhaka, Bangladesh, I have been in the designing & Development industry for over 24 months.</p>
+                </div>
+            </div>
+            <div class="faq-item border-b-2 border-[#000000] pb-4">
+              <button class="faq-title w-full text-left text-xl font-semibold text-gray-800 py-3 flex gap-x-[13px]  items-center  focus:outline-none">
+                <span class="arrow-icon transform rotate-0 transition-transform duration-200"><i class="fa-solid fa-chevron-down"></i></span>
+                  <span>How can i help you?</span>
+              </button>
+              <div class="faq-content mt-2 text-gray-600 text-base hidden">
+                  <p>My name is Roman & I am a Freelancer.
+I live in Dhaka, Bangladesh, I have been in the designing & Development industry for over 24 months.</p>
+              </div>
+          </div>
+          <div class="faq-item border-b-2 border-[#000000] pb-4">
+            <button class="faq-title w-full text-left text-xl font-semibold text-gray-800 py-3 flex gap-x-[13px]  items-center  focus:outline-none">
+              <span class="arrow-icon transform rotate-0 transition-transform duration-200"><i class="fa-solid fa-chevron-down"></i></span>
+                <span>Simple process for workflowspan>
+            </button>
+            <div class="faq-content mt-2 text-gray-600 text-base hidden">
+                <p>My name is Roman & I am a Freelancer.
+I live in Dhaka, Bangladesh, I have been in the designing & Development industry for over 24 months.</p>
+            </div>
+        </div>
+        <div class="faq-item border-b-2 border-[#000000] pb-4">
+          <button class="faq-title w-full text-left text-xl font-semibold text-gray-800 py-3 flex gap-x-[13px]  items-center  focus:outline-none">
+            <span class="arrow-icon transform rotate-0 transition-transform duration-200"><i class="fa-solid fa-chevron-down"></i></span>
+              <span>Why responsive one page tamplate?span>
+          </button>
+          <div class="faq-content mt-2 text-gray-600 text-base hidden">
+              <p>My name is Roman & I am a Freelancer.
+I live in Dhaka, Bangladesh, I have been in the designing & Development industry for over 24 months.</p>
+          </div>
+      </div>
+            </div>
+            <div class="">
+              <img class="mx-auto" src="images/faq.png" alt="">
+            </div>
+          </div>
+        </div>
+      </section>
+     <!-- Faq section end  -->
+    <!-- Footer section start -->
+     <footer id="contact" class="md:pt-[68px] pt-[30px] md:pb-[120px] pb-[30px] bg-[#D9D9D9] lg:px-[25px] px-[15px]">
+        <div class="container mx-auto">
+            <div class="grid md:grid-cols-2 sm:grid-cols-2 sm:gap-x-5 gap-y-5">
+                <div class="lg:w-[477px] sm:text-left text-center">
+                    <h2 class="font-Oswald font-bold md:text-[33px] text-[26px] text-black leading-[48px] pb-[21px]">Let's get in touch</h2>
+                    <p class="font-Roboto font-normal text-[23px] leading-[26px] text-[#2D2D2D] pb-[30px]">I enjoy discussing new projects and design challenges. Please share as much info, as possible so we can get the most out of our first catch-up.</p>
+                    <div class="">
+                        <h3 class="font-Roboto font-bold text-[23px] text-black leading-[26px]">Living In:</h3>
+                        <p class="font-Poppins font-normal text-[17px] text-black leading-[25px]">Uttara, Dhaka, Bangladesh</p>
+                    </div>
+                    <div class="md:pt-[40px] pt-[20px] md:pb-[59px] pb-[20px]">
+                        <h3 class="font-Roboto font-bold text-[23px] text-black leading-[26px]">Call:</h3>
+                        <p class="font-Poppins font-normal text-[17px] text-black leading-[25px]">(+880) 1981579943</p>
+                    </div>
+                    <div class="flex items-center gap-x-4 md:gap-x-[30px] sm:justify-normal justify-center">
+                        <a href="#">   <i class="fa-brands fa-twitter text-[24px] hover:text-[36px] hover:text-[#0085FF] duration-300"></i></a>
+                        <a href="#">   <i class="fa-brands fa-facebook text-[24px] hover:text-[36px] hover:text-[#0085FF] duration-300"></i></a>
+                        <a href="#"><i class="fa-brands fa-instagram text-[24px] hover:text-[36px] hover:text-[#0085FF] duration-300"></i></a>
+                        <a href="#"><i class="fa-brands fa-github text-[24px] hover:text-[36px] hover:text-[#0085FF] duration-300"></i></a>
+                        <a href="#"><i class="fa-brands fa-dribbble text-[24px] hover:text-[36px] hover:text-[#0085FF] duration-300"></i></a>   
+                    </div>
+                </div>
+                <div class="">
+                    <h2 class="font-Oswald font-bold md:text-[33px] text-[26px] text-black leading-[48px] pb-[21px]">Estimate your Project?</h2>
+                    <form class="">
+                        <h4 class="font-Poppins font-normal text-base text-black leading-[24px] md:pb-[20px] ">What is Your Name:</h4>
+                        <input class="bg-transparent border-b border-b-[black] w-full" type="text">
+                        <h4 class="font-Poppins font-normal text-base text-black leading-[24px] md:pb-[20px]  pt-[30px]">Your Email Address:</h4>
+                        <input class="bg-transparent border-b border-b-[black] w-full" type="email">
+                        <h4 class="font-Poppins font-normal text-base text-black leading-[24px] md:pb-[20px]  pt-[30px]">How can I Help you?:</h4>
+                        <input class="bg-transparent border-b border-b-[black] w-full" type="text">
+                        <div class="">
+                            <button class="font-Oswald font-bold text-[23px] text-white leading-[34px] py-[9px] px-[28px] bg-[#464646] mt-[50px]">Sent <i class="fa-solid fa-arrow-right pl-[20px]"></i> </button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <div class="bg-[#484848] md:pt-[60px] pt-[30px] md:pb-[58px] pb-[30px] lg:px-[25px] px-[15px]">
+        <div class="container mx-auto">
+            <div class="md:flex lg:flex sm:flex justify-between items-center">
+                <h3 class="font-Poppins font-normal text-white lg:text-[27px] text-[14px] text-center md:text-left leading-[28px]">Copyright © 2023 <span class="text-red-700">ROMAN</span>  . All Rights Reserved.</h3>
+                <h4 class="font-Poppins font-normal lg:text-[25px] text-[14px] text-center md:text-left text-white leading-[29px]">Designed by <span class="underline">Roman Islam Joy</span></h4>
+            </div>
+        </div>
+    </div>
+    <!-- Footer section end -->
+    <script src="script.js"></script>
+  </body>
+</html>
